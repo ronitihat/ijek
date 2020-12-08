@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tifad - Ganti Password</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="img/corner.png" type="image/x-icon">
+		<link rel="icon" href="img/corner.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/custom.bootstrap.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body class="bg-img">
+
+		<nav class="navbar navbar-default example6 navbar-fixed-top">
+		    <div class="container">
+		      <div class="navbar-header">
+		        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar6">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+		        <a class="navbar-brand" data-toggle="modal" data-target="#pop3">
+		        </a>
+		      </div>
+		      <div class="navbar-collapse collapse" id="navbar6">
+		        <ul class="nav navbar-nav navbar-right">
+				
+				  <li style="text-align:right;"><a href="login.html"><font color="#00aeff"><b>LOGIN</b></font></a></li>
+		         
+				  <li style="text-align:right;"><a href="paket.html">VOUCHER</a></li>
+				  <li style="text-align:right;"><a href="rumah.html">INTERNET</a></li>
+				  <li style="text-align:right;"><a href="iklan.html">IKLAN</a></li>		  
+				  <li style="text-align:right;"><a href="faq.html">FAQ</a></li>
+				  <li style="text-align:right;"><a href="support.html">SUPPORT</a></li>
+
+			
+		        </ul>
+		      </div>
+		   
+		    </div>
+
+		  </nav> 		
+		<div class="jumbroton">
+			<div class="col-md-4 col-md-offset-4 text-center">
+			<img class="logo" src="img/logo.png">
+				<fieldset class="fieldset title">
+					<legend align="center" class="legend">
+						<span class="text-center">SELAMAT DATANG DI LAYANAN GANTI PASSWORD</span>
+					</legend>
+				</fieldset>
+				<div class="paket">
+				<div class="panel border-panel2 text-center">
+					<div class="panel-heading bg-panel2">
+						<h6>GUNAKAN DENGAN SEBAIK-BAIKNYA </h6>
+					</div>
+					<div class="panel-body">
+						Silahkan KLik Tombol UBAH Untuk Untuk dapat menggubah AKUN anda
+					</div>
+					<div class="panel-footer">
+						<p><button class="btn btn-success beli" data-toggle="modal" data-target="#modal-signup">UBAH</button></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center copyright">
+				<fieldset class="fieldset">
+					<legend align="center" class="legend">
+						<span class="icon-copyright copyright">Tifad.Net 2020</span>
+					</legend>
+				</fieldset>
+				<div class="cs">
+                    <h4>Kp. Cimangguu Rt.17 Rw.07 Desa Citumenggung Bojong</h4>
+				    CS : <span class="icon-whatsapp">081289914870</span>
+				</div>
+			</div>
+			<div id="modal-signup" class="modal fade" role="dialog" data-backdrop="static">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title text-center">GANTI PASSWORD</h4>
+						</div>
+						<form id="form-signup" action="javascript:signup();">
+							<div class="modal-body text-left">
+								<div class="form-group">
+									<input id="nomor" class="form-control" type="text" placeholder="no. hp" pattern="[0-9-]+" required title="karakter yg diperbolehkan 0-9">
+								</div>
+								<div class="form-group input-group">
+								    <span class="input-group-addon">mac</span>
+									<input id="mac" class="form-control" type="text" value="$(mac)" readonly="readonly">
+								</div>
+								<div class="form-group">
+									<input id="username" class="form-control" type="text" placeholder="username" pattern="[A-z0-9]{4,20}" required title="minimal 4 karakter yg diperbolehkan a-z A-Z 0-9 tanpa spasi">
+								</div>
+								<div class="form-group">
+									<input id="password1" class="form-control" type="password" placeholder="password" autocomplete="off" pattern=".{3,}" required title="minimal 3 karakter">
+								</div>
+								<div class="form-group">
+								    <div id="validate-status"></div>
+									<input id="password2" class="form-control" type="password" placeholder="ulangi password" autocomplete="off" pattern=".{3,}" required title="minimal 3 karakter">
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" required="required">
+										<span class="check">Saya setuju dengan <a href="tos.html" target="_blank">syarat &amp; ketentuan</a> @IDSkyNetwork</span>
+									</label>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button id="proses" type="submit" class="btn btn-success btn-md pull-right">PROSES</button>
+								<button class="btn btn-warning btn-md pull-left" data-dismiss="modal">BATAL</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="confirm" class="modal fade" role="dialog" data-backdrop="static">
+				<div class="modal-dialog modal-sm">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-body text-center">
+						    <p></p>
+							<p>Permintaan Anda berhasil terkirim, silahkan tunggu beberapa menit.</p>
+							<button type="button" class="btn btn-success center-block" data-dismiss="modal">OK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/signup.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
